@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Kigo</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="">
+            <div class="h-screen font-serif">
+                <div class="contenedor w-full flex justify-center">
+                    <div class="max-w-7xl w-full flex flex-col md:flex-row">
+                        <!-- Contenido principal - responsive -->
+                        <div
+                            class="text-neutral-50 w-full md:w-1/2 p-6 md:ml-6 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+                            <!-- Logo y menú hamburguesa (solo móvil) -->
+                            <div class="w-full flex justify-between items-center mb-8 md:mb-0">
+                                <div class="h-16">
+                                    <img src="kigo-logo.png" class="h-full">
+                                </div>
+                                <!-- Menú hamburguesa (solo en móvil) -->
+                                <div class="md:hidden">
+                                    <div class="hamburger" id="hamburger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menú móvil (oculto por defecto) -->
+                            <div class="mobile-menu w-full md:hidden bg-gray-800 rounded-lg mt-4" id="mobileMenu">
+                                <div class="flex flex-col space-y-4 py-4 px-6">
+                                    <a href="https://www.kigo.pro/index.html"
+                                        class="text-white hover:text-orange-500 transition-colors text-lg py-2 border-b border-gray-700">Soluciones</a>
+                                    <a href="https://www.kigo.pro/kigo-nosotros.html"
+                                        class="text-white hover:text-orange-500 transition-colors text-lg py-2 border-b border-gray-700">Acerca
+                                        de</a>
+                                    <a href="https://www.kigo.pro/kigo-faqs.html"
+                                        class="text-white hover:text-orange-500 transition-colors text-lg py-2 border-b border-gray-700">FAQs</a>
+                                    <a href="https://www.kigo.pro/kigo-contacto.html"
+                                        class="text-white hover:text-orange-500 transition-colors text-lg py-2">Contacto</a>
+                                </div>
+                            </div>
+
+                            <!-- Contenido de texto -->
+                            <div
+                                class="place-content-center text-4xl md:text-5xl lg:text-6xl font-semibold pt-8 md:pt-20 pb-6">
+                                <p class="leading-tight">Sin filas, sin monedas y sin boletos</p>
+                            </div>
+                            <div class="place-content-center text-lg md:text-xl text-gray-300 pb-2">
+                                <p>La única plataforma que necesita</p>
+                                <p>para digitalizar tus accesos</p>
+                            </div>
+                            <div class="py-8 md:py-12">
+                                <a href="https://play.google.com/store/apps/details?id=com.parkimovil.app&hl=es_419"
+                                    class="inline-flex items-center justify-center rounded-full bg-orange-500 w-48 h-12 text-white font-semibold hover:bg-orange-600 transition duration-300 shadow-lg hover:shadow-orange-500/30">
+                                    DESCARGAR APP
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Imagen y menú escritorio (oculto en móvil) -->
+                        <div class="hidden md:block w-1/2 max-w-7xl flex justify-end relative">
+                            <img src="phone+fondo.jpeg" alt="">
+
+                            <div class="absolute top-0 right-0 p-6">
+                                <div class="flex flex-row space-x-20">
+                                    <a href="https://www.kigo.pro/index.html"
+                                        class="text-white hover:text-gray-300 transition-colors">Soluciones</a>
+                                    <a href="https://www.kigo.pro/kigo-nosotros.html"
+                                        class="text-white hover:text-gray-300 transition-colors">Acerca de</a>
+                                    <a href="https://www.kigo.pro/kigo-faqs.html"
+                                        class="text-white hover:text-gray-300 transition-colors">FAQs</a>
+                                    <a href="https://www.kigo.pro/kigo-contacto.html"
+                                        class="text-white hover:text-gray-300 transition-colors">Contacto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resto de tu contenido existente -->
+                <div class="flex justify-center">
+                    <div class="max-w-7xl w-full py-16 px-4">
+                        <p class="titulos text-4xl md:text-5xl font-bold text-center md:text-left">Soluciones</p>
+
+                        <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch mt-12">
+                            <!-- Tarjeta Residencial -->
+                            <div
+                                class="flex flex-col items-center text-center bg-white rounded-xl p-6 w-full md:w-1/3 shadow-md">
+                                <div class="p-4 bg-orange-100 rounded-full">
+                                    <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl font-bold text-gray-800 mt-4">Residencial</p>
+                                <p class="text-gray-600 leading-relaxed mt-2">Gestionar anfitriones, visitas e
+                                    invitaciones en
+                                    fraccionamientos y condominios.</p>
+                            </div>
+
+                            <!-- Tarjeta Universidad -->
+                            <div
+                                class="flex flex-col items-center text-center bg-white rounded-xl p-6 w-full md:w-1/3 shadow-md">
+                                <div class="p-4 bg-orange-100 rounded-full">
+                                    <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl font-bold text-gray-800 mt-4">Universidad</p>
+                                <p class="text-gray-600 leading-relaxed mt-2">Administra el ingreso y asistencias de
+                                    alumnos,
+                                    profesores y personal de instituciones
+                                    universitarias.</p>
+                            </div>
+
+                            <!-- Tarjeta Industria -->
+                            <div
+                                class="flex flex-col items-center text-center bg-white rounded-xl p-6 w-full md:w-1/3 shadow-md">
+                                <div class="p-4 bg-orange-100 rounded-full">
+                                    <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl font-bold text-gray-800 mt-4">Industria</p>
+                                <p class="text-gray-600 leading-relaxed mt-2">Control de accesos para empleados,
+                                    colaboradores y
+                                    personal de complejos industriales.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center md:justify-end mt-12">
+                            <a href="categories.html"
+                                class="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition duration-300">
+                                Ver todas las categorías
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center bg-gray-100 py-16">
+                    <div class="max-w-7xl w-full px-4">
+                        <p class="titulos text-4xl md:text-5xl font-bold text-center md:text-left">Beneficios</p>
+
+                        <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch mt-12">
+                            <!-- Beneficio 1 -->
+                            <div
+                                class="flex flex-col items-center text-center bg-white rounded-xl p-6 w-full md:w-1/3 shadow-md">
+                                <div class="p-4 bg-orange-100 rounded-full">
+                                    <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl font-bold text-gray-800 mt-4">Invitación</p>
+                                <p class="text-gray-600 leading-relaxed mt-2">Ofrece a los usuarios invitaciones
+                                    personales.</p>
+                            </div>
+
+                            <!-- Beneficio 2 -->
+                            <div
+                                class="flex flex-col items-center text-center bg-white rounded-xl p-6 w-full md:w-1/3 shadow-md">
+                                <div class="p-4 bg-orange-100 rounded-full">
+                                    <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl font-bold text-gray-800 mt-4">Automatización</p>
+                                <p class="text-gray-600 leading-relaxed mt-2">Es fácil para la navegación del usuario.
+                                </p>
+                            </div>
+
+                            <!-- Beneficio 3 -->
+                            <div
+                                class="flex flex-col items-center text-center bg-white rounded-xl p-6 w-full md:w-1/3 shadow-md">
+                                <div class="p-4 bg-orange-100 rounded-full">
+                                    <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl font-bold text-gray-800 mt-4">Notificaciones</p>
+                                <p class="text-gray-600 leading-relaxed mt-2">Sugiere nuevos productos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            // Script para el menú hamburguesa
+            document.addEventListener('DOMContentLoaded', function () {
+                const hamburger = document.getElementById('hamburger');
+                const mobileMenu = document.getElementById('mobileMenu');
+
+                hamburger.addEventListener('click', function () {
+                    this.classList.toggle('open');
+                    mobileMenu.classList.toggle('open');
+                });
+
+                // Cerrar el menú al hacer clic en un enlace (en dispositivos móviles)
+                const mobileLinks = document.querySelectorAll('#mobileMenu a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        hamburger.classList.remove('open');
+                        mobileMenu.classList.remove('open');
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>

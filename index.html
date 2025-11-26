@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Encabezado con diseño creativo */
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: rotate(30deg);
+        }
+
+        .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        /* Contenido principal */
+        .content {
+            padding: 40px 30px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .info p {
+            margin-bottom: 8px;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info p:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            color: #6a11cb;
+            margin-top: 10px;
+        }
+
+        strong {
+            color: #2575fc;
+            font-weight: 600;
+        }
+
+        /* Botón de acción */
+        .btn-container {
+            text-align: center;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(106, 17, 203, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        /* Elementos decorativos minimalistas */
+        .decoration {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: rgba(106, 17, 203, 0.05);
+            z-index: 0;
+        }
+
+        .decoration-1 {
+            top: -40px;
+            right: -40px;
+        }
+
+        .decoration-2 {
+            bottom: -60px;
+            left: -60px;
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.2rem;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .btn {
+                padding: 12px 28px;
+                font-size: 1rem;
+            }
+
+            .decoration {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.8rem;
+            }
+
+            .header {
+                padding: 25px 15px;
+            }
+
+            .content {
+                padding: 25px 15px;
+            }
+
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+
+        <div class="header">
+            <h1 class="title">Proyecto Final</h1>
+        </div>
+
+        <div class="content">
+            <div class="info">
+                <p><strong>Nombre del profesor:</strong></p>
+                <p>Cabrera Gutiérrez José Rubén</p>
+                <p><strong>Nombre del alumno (a):</strong></p>
+                <p>Alexia Sánchez Vázquez</p>
+                <p>Danna Michelle Cruz Vázquez</p>
+                <p>Daniel Alberto Sosa Barrios</p>
+                <p>Elias Huitzil Ramírez</p>
+                <p>Ana Belén Mendoza Valencia</p>
+                <p>7mo Cuatrimestre Grupo A</p>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="home.html" class="btn">Ver Proyecto</a>
+        </div>
+    </div>
+</body>
+
+</html>

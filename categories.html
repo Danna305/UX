@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigo - Soluciones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50 font-serif">
+    <!-- Header Responsivo -->
+    <header class="contenedor shadow-sm">
+        <nav class="container mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center h-16">
+                <img src="kigo-logo.png" class="h-full">
+            </div>
+
+            <!-- Menú Desktop (oculto en móvil) -->
+            <div class="hidden md:flex flex-row space-x-8 lg:space-x-12 xl:space-x-20">
+                <a href="home.html" class="text-white hover:text-gray-300 transition-colors">Home</a>
+                <a href="https://www.kigo.pro/index.html"
+                    class="text-white hover:text-gray-300 transition-colors">Soluciones</a>
+                <a href="https://www.kigo.pro/kigo-nosotros.html"
+                    class="text-white hover:text-gray-300 transition-colors">Acerca de</a>
+                <a href="https://www.kigo.pro/kigo-faqs.html"
+                    class="text-white hover:text-gray-300 transition-colors">FAQs</a>
+                <a href="https://www.kigo.pro/kigo-contacto.html"
+                    class="text-white hover:text-gray-300 transition-colors">Contacto</a>
+            </div>
+
+            <!-- Menú Hamburguesa (solo móvil) -->
+            <div class="md:hidden">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menú Móvil (oculto por defecto) -->
+        <div class="mobile-menu md:hidden bg-blue-700" id="mobileMenu">
+            <div class="flex flex-col space-y-4 py-4 px-6">
+                <a href="index.html"
+                    class="text-white hover:text-orange-300 transition-colors text-lg py-2 border-b border-blue-600">Home</a>
+                <a href="https://www.kigo.pro/index.html"
+                    class="text-white hover:text-orange-300 transition-colors text-lg py-2 border-b border-blue-600">Soluciones</a>
+                <a href="https://www.kigo.pro/kigo-nosotros.html"
+                    class="text-white hover:text-orange-300 transition-colors text-lg py-2 border-b border-blue-600">Acerca
+                    de</a>
+                <a href="https://www.kigo.pro/kigo-faqs.html"
+                    class="text-white hover:text-orange-300 transition-colors text-lg py-2 border-b border-blue-600">FAQs</a>
+                <a href="https://www.kigo.pro/kigo-contacto.html"
+                    class="text-white hover:text-orange-300 transition-colors text-lg py-2">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12">
+        <!-- Title -->
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-8 md:mb-12 text-center md:text-left">
+            Soluciones</h1>
+
+        <!-- Solutions Grid -->
+        <div class="bg-gradient-to-br from-blue-400 to-blue-500 rounded-3xl p-6 md:p-8 lg:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
+
+                <!-- Residencial -->
+                <div
+                    class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-white hover:bg-white/20 transition transform hover:-translate-y-1 duration-300">
+                    <div class="flex justify-center">
+                        <div class="p-3 md:p-4">
+                            <svg class="w-16 h-16 md:w-20 md:h-20 text-orange-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">Residencial</h3>
+                    <p class="mb-4 md:mb-6 text-sm md:text-base leading-relaxed text-center md:text-left">Gestiones e
+                        inspección, visitas e instalaciones en
+                        fraccionamientos</p>
+
+                    <div class="flex justify-center md:justify-start">
+                        <a href="https://www.kigo.pro/kigo-residencial.html"
+                            class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-medium transition">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Universidad -->
+                <div
+                    class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-white hover:bg-white/20 transition transform hover:-translate-y-1 duration-300">
+                    <div class="flex justify-center">
+                        <div class="p-3 md:p-4">
+                            <svg class="w-16 h-16 md:w-20 md:h-20 text-orange-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">Universidad</h3>
+                    <p class="mb-4 md:mb-6 text-sm md:text-base leading-relaxed text-center md:text-left">Administrador
+                        del ingreso y asistencia de campus</p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="https://www.kigo.pro/kigo-universidad.html"
+                            class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-medium transition">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Industrial -->
+                <div
+                    class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-white hover:bg-white/20 transition transform hover:-translate-y-1 duration-300">
+                    <div class="flex justify-center">
+                        <div class="p-3 md:p-4">
+                            <svg class="w-16 h-16 md:w-20 md:h-20 text-orange-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">Industrial</h3>
+                    <p class="mb-4 md:mb-6 text-sm md:text-base leading-relaxed text-center md:text-left">Control de
+                        acceso eficiente para colaboradores y personas
+                    </p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="https://www.kigo.pro/kigo-industrial.html"
+                            class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-medium transition">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corporativo -->
+                <div
+                    class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-white hover:bg-white/20 transition transform hover:-translate-y-1 duration-300">
+                    <div class="flex justify-center">
+                        <div class="p-3 md:p-4">
+                            <svg class="w-16 h-16 md:w-20 md:h-20 text-orange-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">Corporativo</h3>
+                    <p class="mb-4 md:mb-6 text-sm md:text-base leading-relaxed text-center md:text-left">Control de
+                        accesos de empleados, colaboradores</p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="https://www.kigo.pro/kigo-corporativo.html"
+                            class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-medium transition">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Comercial -->
+                <div
+                    class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-white hover:bg-white/20 transition transform hover:-translate-y-1 duration-300">
+                    <div class="flex justify-center">
+                        <div class="p-3 md:p-4">
+                            <svg class="w-16 h-16 md:w-20 md:h-20 text-orange-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">Centro Comercial</h3>
+                    <p class="mb-4 md:mb-6 text-sm md:text-base leading-relaxed text-center md:text-left">Control de
+                        acceso para establecimiento de complejos
+                        comerciales</p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="https://www.kigo.pro/kigo-centro-comercial.html"
+                            class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-medium transition">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Escolar -->
+                <div
+                    class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-white hover:bg-white/20 transition transform hover:-translate-y-1 duration-300">
+                    <div class="flex justify-center">
+                        <div class="p-3 md:p-4">
+                            <svg class="w-16 h-16 md:w-20 md:h-20 text-orange-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">Escolar</h3>
+                    <p class="mb-4 md:mb-6 text-sm md:text-base leading-relaxed text-center md:text-left">Gestión de
+                        ingreso y asistencia de alumnos-padres de familia
+                    </p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="https://www.kigo.pro/kigo-escolar.html"
+                            class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-medium transition">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-4 md:px-6 py-8">
+        <div class="flex justify-center md:justify-start space-x-6">
+            <a href="https://www.facebook.com/kigopro/" class="text-gray-700 hover:text-blue-600 transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+            </a>
+            <a href="https://x.com/kigo_pro" class="text-gray-700 hover:text-blue-400 transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/kigo.pro/" class="text-gray-700 hover:text-pink-600 transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            hamburger.addEventListener('click', function () {
+                this.classList.toggle('open');
+                mobileMenu.classList.toggle('open');
+            });
+
+            // Cerrar el menú al hacer clic en un enlace (en dispositivos móviles)
+            const mobileLinks = document.querySelectorAll('#mobileMenu a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    hamburger.classList.remove('open');
+                    mobileMenu.classList.remove('open');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
